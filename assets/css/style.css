@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+header {
+    width: 100%;
+    background-color: plum;
+    position: fixed;
+    z-index: 999;
+}
+
+.logo {
+    color: #F2F2F2;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.toggler {
+    color: #F2F2F2;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 50px;
+}
+
+nav {
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 1rem;
+    line-height: 40px;
+    transition: 0.3s ease-out;
+}
+
+nav ul li a:hover {
+    color: orchid;
+}
+
+.active {
+    color: orchid;
+    font-weight: bold;
+}
+
+.side-nav {
+    text-align: center;
+}
+
+.side-nav a {
+    padding-right: 1rem;
+    line-height: 40px;
+    color: orchid;
+    text-decoration: none;
+    padding-right: 1rem;
+}
+    
+@media screen and (min-width: 872px) {
+    .content {
+        padding: 0 50px;
+    }
+
+    .toggler {
+        display: none;
+    }
+
+    nav {
+        display: inline-block !important; /* prevents the nav hidding when resizing */
+        position: relative;
+        width: auto;
+        float: right;
+        padding: 5px 0;
+    }
+
+    nav ul {
+        float: left;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding-right: 1rem;
+    }
+
+    .side-nav {
+        float: right;
+    }
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.welcome-video {
+    padding-top: 12%;
+    text-align: center;
+}
+
+.welcome-video video {
+    width: 66%;
+    border-radius: 50%;
+}
+
+.welcome-description {
+    text-align: center;
+    width: 100%;
+}
+
+.welcome-description h1 {
+    margin: 10px;
+}
+
+.welcome-description h2 {
+    margin: 10px;
+}
+
+.welcome-description p {
+    text-align: justify;
+}
+
+.testimonies {
+    margin: 5%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
